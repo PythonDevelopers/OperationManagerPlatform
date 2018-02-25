@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from OperationManager import views
 
 urlpatterns = [
+    path('', views.home),  # new
+    # path('add/<int:a>/<int:b>/', views.add, name='add'),  # 注意修改了这一行
     path('admin/', admin.site.urls),
 ]
