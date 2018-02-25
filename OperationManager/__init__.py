@@ -17,3 +17,5 @@ print("Database version : %s " % data)
 
 # 关闭数据库
 cursor.close()
+
+# 添加部分注解
